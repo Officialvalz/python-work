@@ -63,8 +63,8 @@ def view_history():
 		else:
 				counter = 1
 				for transaction in transactions:
-						print(str(counter) + "   " + transaction)
-						counter = counter + 1
+						print(f"{counter}.{transaction}")
+						counter += 1
 		
 		print("===============================")
 		
@@ -104,7 +104,7 @@ while running:
 				running = False
 				
 		else:
-				print("That is not a valid choice.  please enter  1, 2,  3,  4; or 5. ")
+				print("That is not a valid choice.  please enter  1, 2,  3,  4; or 5 to exit. ")
 				
 print("End of program. ")
 			
